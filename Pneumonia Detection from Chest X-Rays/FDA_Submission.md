@@ -46,7 +46,7 @@ Help Radiologists in detecting Pneumonia in Chest X-Rays
 <img src="./images/Model_Architecture.png" />
 
 - The model is based on the [VGG16 model](https://neurohive.io/en/popular-networks/vgg16/)
-- The model uses the first 17 layers of the VGG16 model
+- The model uses the first 16 layers of the VGG16 model
 - The VGG16 model output is flattened and passed through several additional dense and dropout layers
 
 ### 3. Algorithm Training
@@ -62,7 +62,7 @@ Help Radiologists in detecting Pneumonia in Chest X-Rays
 	- Zoom range of 0.15
 * Batch size: 64
 * Optimizer learning rate: 1e-4
-* Layers of pre-existing architecture that were frozen: First 17 layers of VGG model
+* Layers of pre-existing architecture that were frozen: First 16 layers of VGG model
 * Layers of pre-existing architecture that were fine-tuned: None
 * Layers added to pre-existing architecture: Flatten, Dense and Dropout layers
 
@@ -73,11 +73,11 @@ Help Radiologists in detecting Pneumonia in Chest X-Rays
 
 **Final Threshold and Explanation:**
 
-* Threshold: 0.5111328
-* F1 Score: 0.3713298791018998
+* Threshold: 0.6246
+* F1 Score: 0.4381
 
-The final threshold of 0.51 was based on the highest F1 Score of 0.37.
-Based on [this paper](https://arxiv.org/pdf/1711.05225.pdf) the average radiologist has a F1 Score of 0.387. This means this model achieved nearly the same performance as the average radiologist.
+The final threshold of 0.6246 was based on the highest F1 Score of 0.4381.
+Based on [this paper](https://arxiv.org/pdf/1711.05225.pdf) the average radiologist has a F1 Score of 0.387. This means this model achieved a better performance as the average radiologist.
 
 
 ### 4. Databases
