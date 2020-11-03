@@ -2,3 +2,5 @@
 *.gz
 *.pth
 startNotebook.sh
+*.mat
+*crisdb
